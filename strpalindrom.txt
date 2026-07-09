@@ -1,0 +1,19 @@
+import java.util.*;
+public class strpalindrom
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String str = sc.nextLine();
+		
+		StringBuffer sb = new StringBuffer(str);
+		String rev = sb.reverse().toString();
+		
+		if(str.equals(rev)){
+		    System.out.println("Palindrom");
+		}
+		else{
+		    System.out.println("Not a Palindrom");
+		}
+	}
+}
